@@ -1,0 +1,1 @@
+effect give @s minecraft:water_breathing $$param1 0 true

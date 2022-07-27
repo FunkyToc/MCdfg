@@ -1,0 +1,22 @@
+{
+  "parent": "vp:eat/eat_any",
+  "criteria": {
+    "$$param1": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "minecraft:$$param1"
+        },
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "vp:is_vampire"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "vp:systems/bloodbar/food/food_ko_m"
+  }
+}

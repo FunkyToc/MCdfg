@@ -6,13 +6,35 @@ class MClist
 {
 
 	// __________________________
-	// __________ MOB ___________
+	// ________ NUMERIC _________
 	// __________________________
 
-	const ENTITY_ALL = ['axolotl', 'bat', 'bee', 'blaze', 'cat', 'cave_spider', 'chicken', 'cod', 'cow', 'creeper', 'dolphin', 'donkey', 'drowned', 'elder_guardian', 'ender_dragon', 'enderman', 'endermite', 'evoker', 'fox', 'ghast', 'giant', 'goat', 'guardian', 'hoglin', 'horse', 'husk', 'illusioner', 'iron_golem', 'llama', 'magma_cube', 'mooshroom', 'mule', 'ocelot', 'panda', 'parrot', 'phantom', 'pig', 'piglin', 'piglin_brute', 'pillager', 'polar_bear', 'pufferfish', 'rabbit', 'ravager', 'salmon', 'sheep', 'shulker', 'silverfish', 'skeleton', 'slime', 'spider', 'squid', 'stray', 'strider', 'trader_llama', 'tropical_fish', 'turtle', 'vex', 'villager', 'vindicator', 'wandering_trader', 'witch', 'wither', 'wolf', 'zoglin', 'zombie', 'zombified_piglin'];
-	const ENTITY_HOSTILE = ['blaze', 'cave_spider', 'creeper', 'drowned', 'elder_guardian', 'ender_dragon', 'endermite', 'evoker', 'ghast', 'giant', 'guardian', 'hoglin', 'husk', 'illusioner', 'magma_cube', 'phantom', 'piglin', 'piglin_brute', 'pillager', 'pufferfish', 'ravager', 'shulker', 'silverfish', 'skeleton', 'slime', 'spider', 'stray', 'strider', 'vex', 'villager', 'vindicator', 'witch', 'wither', 'zoglin', 'zombie', 'zombified_piglin'];
-	const ENTITY_PASSIVE = ['axolotl', 'bat', 'bee', 'cat', 'chicken', 'cod', 'cow', 'dolphin', 'donkey', 'enderman', 'fox', 'goat', 'horse', 'iron_golem', 'llama', 'mooshroom', 'mule', 'ocelot', 'panda', 'parrot', 'pig', 'polar_bear', 'rabbit', 'salmon', 'sheep', 'squid', 'strider', 'trader_llama', 'tropical_fish', 'turtle', 'villager', 'wandering_trader', 'wolf'];
-	const ENTITY_HUMAN = ['pillager', 'villager', 'vindicator', 'wandering_trader'];
+	const NUMERIC_0_9 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+	const NUMERIC_1_9 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+	const NUMERIC_0_10 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+	const NUMERIC_1_10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+	const NUMERIC_0_15 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+	const NUMERIC_1_15 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+	const NUMERIC_0_20 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ,19, 20];
+	const NUMERIC_1_20 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ,19, 20];
+	const NUMERIC_0_30 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ,19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+	const NUMERIC_1_30 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ,19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+	const NUMERIC_0_50 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ,19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50];
+	const NUMERIC_1_50 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ,19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50];
+	const NUMERIC_0_60 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ,19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60];
+	const NUMERIC_1_60 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ,19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60];
+	const NUMERIC_9_35 = [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35];
+
+
+	// __________________________
+	// _________ MOB _________
+	// __________________________
+
+	const MOB_ALL = ['axolotl', 'bat', 'bee', 'blaze', 'cat', 'cave_spider', 'chicken', 'cod', 'cow', 'creeper', 'dolphin', 'donkey', 'drowned', 'elder_guardian', 'ender_dragon', 'enderman', 'endermite', 'evoker', 'fox', 'ghast', 'giant', 'guardian', 'hoglin', 'horse', 'husk', 'illusioner', 'iron_golem', 'llama', 'magma_cube', 'mule', 'mooshroom', 'ocelot', 'panda', 'parrot', 'phantom', 'pig', 'piglin', 'piglin_brute', 'pillager', 'polar_bear', 'pufferfish', 'rabbit', 'ravager', 'salmon', 'sheep', 'shulker', 'silverfish', 'skeleton', 'skeleton_horse', 'slime', 'snow_golem', 'spider', 'squid', 'stray', 'strider', 'trader_llama', 'tropical_fish', 'turtle', 'vex', 'villager', 'vindicator', 'wandering_trader', 'witch', 'wither', 'wither_skeleton', 'wolf', 'zoglin', 'zombie', 'zombie_horse', 'zombie_villager', 'zombified_piglin'];
+	const MOB_HOSTILE = ['blaze', 'cave_spider', 'creeper', 'drowned', 'elder_guardian', 'ender_dragon', 'endermite', 'evoker', 'ghast', 'giant', 'guardian', 'hoglin', 'husk', 'illusioner', 'magma_cube', 'phantom', 'piglin', 'piglin_brute', 'pillager', 'pufferfish', 'ravager', 'shulker', 'silverfish', 'skeleton', 'slime', 'spider', 'stray', 'strider', 'vex', 'villager', 'vindicator', 'witch', 'wither', 'zoglin', 'zombie', 'zombified_piglin'];
+	const MOB_PASSIVE = ['axolotl', 'bat', 'bee', 'cat', 'chicken', 'cod', 'cow', 'dolphin', 'donkey', 'enderman', 'fox', 'goat', 'horse', 'iron_golem', 'llama', 'mooshroom', 'mule', 'ocelot', 'panda', 'parrot', 'pig', 'polar_bear', 'rabbit', 'salmon', 'sheep', 'squid', 'strider', 'trader_llama', 'tropical_fish', 'turtle', 'villager', 'wandering_trader', 'wolf'];
+	const MOB_HUMAN = ['pillager', 'villager', 'vindicator', 'wandering_trader'];
+	const ENTITY_NOT_MOB = ['area_effect_cloud', 'armor_stand', 'arrow', 'boat', 'dragon_fireball', 'end_crystal', 'evoker_fangs', 'experience_orb', 'eye_of_ender', 'falling_block', 'firework_rocket', 'fishing_bobber', 'item', 'item_frame', 'fireball', 'leash_knot', 'lightning_bolt', 'llama_spit', 'minecart', 'chest_minecart', 'command_block_minecart', 'furnace_minecart', 'hopper_minecart', 'painting', 'spawner_minecart', 'shulker_bullet', 'small_fireball', 'snowball', 'spectral_arrow', 'tnt_minecart', 'tnt', 'egg', 'ender_pearl', 'experience_bottle', 'potion', 'trident'] ;
 	
 
 	// __________________________

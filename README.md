@@ -1,16 +1,18 @@
-# Ninja Moves
-Ninja Moves is a datapack to allow crawling, climbing, smooth landing and wall tricks.
+# Minecraft Datapack File Generator
+Generate Minecraft related files, looping on a list, to not write them yourself.
 
 # Requires 
-- Minecraft 1.15+
-- Bug tolerance
+- PHP
+- Know a bit of PHP
 
 # Use
-1. Download the package and unzip it
-2. Copy/paste the entire "NinjaMoves/" folder in your "[SERVER]/[your-main-map]/datapacks/" folder.
-3. Launch the server or /reload it.
+1. Open index.php and chose a list to loop on
+2. Run the index.php in command line
+3. Files are generated in generated/
 
 # Author
 - Name : FunkyToc 
-- Website : http://naturize.fr
-- Contact : http://naturize.fr/contact
+- Website : http://funkytoc.fr
+
+# License
+This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License: http://creativecommons.org/licenses/by-nc-nd/4.0/

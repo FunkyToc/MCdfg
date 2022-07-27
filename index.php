@@ -9,10 +9,10 @@ $gen = new MCdfg();
 
 
 // Chose your params
-$loop	 				= MClist::FOOD_ALL;
-$template 				= 'advancement_consume_to_function.json';
-$output_file_prefix 	= 'eat_';
-$output_file_ext		= '.json';
+$loop	 				= MClist::NUMERIC_1_60;
+$template 				= 'effect_give_s.mcfunction';
+$output_file_prefix 	= '';
+$output_file_ext		= '.mcfunction';
 
 
 // Generate

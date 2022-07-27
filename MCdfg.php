@@ -5,7 +5,7 @@ namespace Minecraft\Tools;
 class MCdfg 
 {
 	const VAR_PREFIX = '$$';
-	const VAR_DEFAULT = 'param';
+	const VAR_NAME = 'param';
 	const INTPUT_FOLDER = 'templates/';
 	const OUTPUT_FOLDER = 'generated/';
 
@@ -19,9 +19,7 @@ class MCdfg
 			$output_file = $parameters[0] . $value . $parameters[1];
 			$params = is_array($value) ? $value : [$value];
 
-			$state = self::generate($template, $output_file, $params);
-
-			if ($state) 
+			if (self::generate($template, $output_file, $params)) 
 			{
 				echo PHP_EOL . $fi . ' - ' . $output_file . ' Generated';
 				$fi++;
@@ -51,7 +49,7 @@ class MCdfg
 			}
 			elseif (is_numeric($key)) 
 			{
-				$content = str_replace(self::VAR_PREFIX . self::VAR_DEFAULT . $i, $value, $content);
+				$content = str_replace(self::VAR_PREFIX . self::VAR_NAME . $i, $value, $content);
 				file_put_contents(self::OUTPUT_FOLDER . $output_file, $content);
 			}
 			else
